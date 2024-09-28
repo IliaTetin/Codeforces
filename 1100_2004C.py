@@ -13,3 +13,4 @@ for _ in range(t):
                 k -= diff
             out -= cost[i+1]
     print(out)
+    
