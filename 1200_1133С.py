@@ -1,0 +1,11 @@
+n = int(input())
+a = list(map(int, input().split()))
+a.sort()
+l = 0
+res = 0
+
+for r in range(0, n):
+    while a[r] - a[l] > 5:
+        l += 1
+    res = max(res, r-l+1)
+print(res)
